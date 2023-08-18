@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(180deg, #181818 -10.35%, rgba(0, 0, 0, 0) 153.96%);  
+    color: #FFF;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background: transparent;
+    transition: all 0.50s ease;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.nav a:hover {
+    color: #ff1515;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #FFF;
+    background: #ff1515;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all 0.40s ease;
+    
+}
+
+.btn:hover {
+    border: 2px solid #ff1515;
+    background: transparent;
+    color: #fff;
+    
+}
+
+#menu{
+    color: #FFF;
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Head h1 {
+    font-size: 90px;
+    font-weight: 800;
+    mask-border: 5px;
+}
+
+.Head p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media (max-width:1350px) {
+    nav {
+        padding: 20px 5%;
+    }
+
+    section {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:950px) {
+    .Head h1 {
+        font-size: 70px;
+    }
+
+    .Head p {
+        font-size: 22px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 9px 27px;
+    }
+}
+
+@media (max-width:860px) {
+    #menu {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #ff1515;
+        text-align: left;
+        transition: all 0.50s ease;
+    }
+
+    .nav a {
+        color: #FFF;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        border-left: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        display: block;
+    }
+
+    .nav a:hover {
+        background: #FFF;
+        color: #ff1515;
+    }
+
+    .nav.open {
+        top: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .Head h1 {
+        font-size: 50px;
+    }
+}
